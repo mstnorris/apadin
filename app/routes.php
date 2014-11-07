@@ -13,5 +13,6 @@
 
 Route::get('/', function()
 {
-	return View::make('welcome'); // changed from default hello
+	// return View::make('welcome'); // changed from default hello
+    dd(App::environment());
 });
