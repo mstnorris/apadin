@@ -13,6 +13,9 @@
 
 Route::get('/', function()
 {
-	// return View::make('welcome'); // changed from default hello
-    dd(App::environment());
+	return View::make('welcome'); // changed from default hello
+
 });
+
+Route::get('property/{id}', ['as' => 'property_path', 'uses' => 'PropertiesController@show']);
+Route::resource('properties', 'PropertiesController');

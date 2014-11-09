@@ -1,0 +1,1 @@
+/home/vagrant/Code/apadin/app/views/Properties/create.blade.php
